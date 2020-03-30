@@ -1,0 +1,7 @@
+xc_user数据库 用户表结构
+xc_user  用户基本信息表
+xc_role  角色表
+xc_user_role  用户角色表 中间表 
+xc_permission   角色权限表  中间表
+xc_menu   权限表
+

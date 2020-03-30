@@ -1,0 +1,32 @@
+xc在线微服务  总结
+xc-service-api
+ api定义工程
+xc-service-manage-cms
+ 页面管理页面静态化微服务
+xc-service-manage-cms-client
+ 页面静态化客户端
+xc-service-manage-course
+ 课程管理微服务
+xc-service-base-filesystem
+ 图片文件上传微服务
+xc-goven-center
+ eureka微服务注册中心 管理微服务地址和注册服务
+xc-service-search
+ 在线搜索微服务
+xc-service-manage-media
+ 媒体(学习视频)资源管理微服务
+xc-service-learning
+ 学习资源查询微服务
+xc-service-manage-media-processor
+ 媒体资源处理微服务(视频处理为MP4||hls视频文件)
+xc-service-ucenter-auth
+ 用户单点登录微服务
+xc-service-ucenter
+ 用户中心微服务 
+xc-govern-gateway
+ zuul网关 
+
+
+
+
+
