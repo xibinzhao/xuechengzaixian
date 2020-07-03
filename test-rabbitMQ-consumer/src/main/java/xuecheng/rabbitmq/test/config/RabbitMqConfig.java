@@ -24,7 +24,7 @@ public class RabbitMqConfig {
     public Queue QUEUE_SM() {
         return new Queue(QUEUE_SM);
     }
-
+    //声明队列
     @Bean(QUEUE_EMAIL)
     public Queue QUEUE_EMAIL() {
         return new Queue(QUEUE_EMAIL);
@@ -35,7 +35,7 @@ public class RabbitMqConfig {
     public Binding binding(@Qualifier(QUEUE_SM) Queue sm, @Qualifier(EXCHANGE_TOPIC) Exchange exchange) {
         return BindingBuilder.bind(sm).to(exchange).with(SMS_ROUTING).noargs();
     }
-
+    //绑定交换机和队列
     @Bean
     public Binding binding2(@Qualifier(QUEUE_EMAIL) Queue sm, @Qualifier(EXCHANGE_TOPIC) Exchange exchange) {
         return BindingBuilder.bind(sm).to(exchange).with(EMAIL_ROUTING).noargs();

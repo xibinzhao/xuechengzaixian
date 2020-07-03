@@ -22,4 +22,9 @@ public class RabbitMqClientUtils {
         Channel channel = connection.createChannel();
         return channel;
     }
+    public static Channel getChannel() throws IOException, TimeoutException {
+        Connection connection = getConnection();
+        Channel channel = connection.createChannel();
+        return channel;
+    }
 }
